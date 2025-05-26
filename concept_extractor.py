@@ -29,7 +29,7 @@ def clean_keyword(kw):
         return ""
     return result
 
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = SentenceTransformer('paraphrase-albert-small-v2')
 kw_model = KeyBERT(model=model)
 
 def extract_concepts_and_links(text, top_n=8):
